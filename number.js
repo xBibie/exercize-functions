@@ -7,36 +7,40 @@ function bigNumber(number) {
     } else {
       return false;
     }
-    console.log (number);
   };
   
+console.log(bigNumber(66));
+console.log(bigNumber(345));
+console.log(bigNumber(3));
+console.log(bigNumber(111));
+
 //a function that produce something
 
 //Brenda the Bouncer Bot
-
-const age = 21;
-const totalAmount = 126;
-const maxAmount = 125;
-
-if (totalAmount >125){
+const brendaBouncer = function (maxAmount, totalAmount, agePerson){
+if (agePerson < 18); {
+    console.log ('This is a club for adults');
+if (totalAmount >= maxAmount){
     console.log ('its too busy now, come back later');
 } else {
     console.log ('come in');
 };
-if (age < 18); {
-    console.log('This is a club for adults');
-};
+
+console.log(brendaBouncer(150, 56, 17)); //this is a club for adults
+console.log(brendaBouncer(150, 155, 30)); // its too busy now, come back later
+console.log(brendaBouncer(150, 40, 23)); // come in
+console.log(brendaBouncer(150, 111, 7)); // this is a club for adults
 
 // a functions that produce something
 
-const calculateAverage = function (numbers){
-    calculateAverage (grades);
-    Math.round (grades);
-    return calculateAverage;
+const calculateAverage = function (number1, number2, number3, number4, number, 5){
+  const total = number1 + number2 + number3 + number4 + number5;
+  const average = total / 5;
+  const averageRounded = Math.round(average);
+  return averageRounded;
 }; 
-    const average = numbers.reduce ((total n)=> total+n)/numbers.length;
-    const grades = [5, 6, 8, 14, 78];
-    console.log (grades)
 
+console.log(calculateAverage(5, 7, 23, 45, 2)); // 16,4
+console.log(calculateAverage(33, 5, 22, 56, 56)); // 34,4
     // a function that produce and does something
     
